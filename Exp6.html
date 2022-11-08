@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>
+Events
+</title>
+</head>
+<body onload="load()" onresize="resize()">
+    <script>
+        function load(){
+        alert("Loaded");
+        }
+        function resize(){
+        alert("page resized");
+        }
+        function submit(){
+        alert("trigged by onclick");
+        }
+        function mouseover(){
+        document.body.style.background = "green";
+        }
+        function mouseout(){
+        document.body.style.background = "red";
+        }
+        function reset() {
+        alert("The form was reset");
+        }
+        </script>
+<button onclick="submit()" value="click">Click</button>
+<button onmouseover="mouseover()" >Mouseover</button>
+<button onmouseout="mouseout()">Mouseout</button>
+<form onreset="reset()">
+    Enter name: <input type="text">
+    <input type="reset">
+    </form>
+    </body>
+    </html>     
